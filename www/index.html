@@ -69,21 +69,21 @@
                     <button class="repo-btn">Upload</button>
                     <div class="name fx">
                         <label for="name">Name</label>
-                        <input class='name-input' type="text" placeholder="name">
+                        <input class='name-input' type="text" placeholder="name" required>
                         <small class="error"></small>
                     </div>
                     <div class="head fx">
                         <label for="title">Title</label>
-                        <input class='headin' type="text" placeholder="Title...">
+                        <input class='headin' type="text" placeholder="Title..." required>
                         <small class="error"></small>
                     </div>
                     <div class="date fx">
                         <label for="date">Date</label>
-                        <input class='date-input' type="text" placeholder="mm/dd/yy" maxlength="8">
+                        <input class='date-input' type="date"  maxlength="8" required>
                         <small class="error"></small>
                     </div>
                     <div class="fx">
-                        <textarea id="text" placeholder="Message"></textarea>
+                        <textarea id="text" placeholder="Message" required></textarea>
                         <small class="error"></small>
                     </div>
                     <button type="submit" id="report-btn">Report</button>
@@ -106,7 +106,9 @@
                         Quae quia voluptatum veniam, rem expedita beatae nostrum dolore provident.
                     </p>
                     <h4 class="author">Nnamdi John</h4>
-                    <i class="fa-solid fa-trash-can"></i>
+                    <!-- <i class="fa-solid fa-trash-can"></i> -->
+                     <p class="latitude"></p>
+                     <p class="longitude"></p>
                 </div>
             </div>
         </section>
@@ -117,12 +119,12 @@
                 <h2>Welcome!</h2>
                 <div class="login fx">
                     <label for="login-email">Email</label>
-                    <input type="email" id="login-email" placeholder="example@mail.com...">
+                    <input type="email" id="login-email" placeholder="example@mail.com..." required>
                     <small class="err"></small>
                 </div>
                 <div class="login fx">
                     <label for="login-password">Password</label>
-                    <input type="password" id="login-password" placeholder="password...">
+                    <input type="password" id="login-password" placeholder="password..." required>
                     <small class="err"></small>
                 </div>
                 <button class="login-btn logb">Login</button>
@@ -135,12 +137,12 @@
             <h2>Sign up</h2>
             <div class="login fx">
                 <label for="sign-email">Email</label>
-                <input type="email" id="sign-email" placeholder="example@mail.com...">
+                <input type="email" id="sign-email" placeholder="example@mail.com..." required>
                 <small class="err"></small>
             </div>
             <div class="login fx">
                 <label for="sign-password">Password</label>
-                <input type="password" id="sign-password" placeholder="password...">
+                <input type="password" id="sign-password" placeholder="password..." required>
                 <small class="err"></small>
             </div>
             <button class="sign-up logb">sign-up</button>
